@@ -1,0 +1,9 @@
+extends _baseEmail
+
+block content
+    h1 Support Email
+    p Mr/Ms #{name}  thanks for your feedback we will get back to you.
+    if category !== ''
+        p Category :- #{category}
+    if details !== ''
+        p About :- #{details}

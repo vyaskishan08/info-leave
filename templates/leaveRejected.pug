@@ -1,0 +1,14 @@
+extends _baseEmail
+
+block content
+    h1 #{status} Leave
+    p Hi #{name},
+    p 
+    p Your leave details are :- 
+    p Subject :- #{Subject} 
+    p From :- #{fromDate} 
+    p To :-  #{toDate}
+    p Purpose :- #{purpose}
+    p Status :- #{status}
+    p
+    p Thank you.

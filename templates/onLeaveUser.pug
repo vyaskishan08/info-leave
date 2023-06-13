@@ -1,0 +1,49 @@
+block content
+ body(style='margin:20px; padding:20px; background-color:#F2F2F2;')
+    if(leaveList && leaveList.length > 0)
+        h3 Employee Leave Details :-
+        table(width='100%', cellspacing='0px', cellpadding='5px', border='1px', bgcolor='#F2F2F2')
+            tr
+                th No.
+                th Name
+                th Subject
+                th Status
+                th Purpose
+                th FromDate
+                th ToDate
+
+            each val, index in leaveList
+                tr(align='center')
+                    td= index+1
+                    td= val.name
+                    td= val.myLeave.Subject  
+                    td= val.myLeave.Status    
+                    td= val.myLeave.Purpose    
+                    td= val.myLeave.FromDate    
+                    td= val.myLeave.ToDate 
+        br
+    else 
+
+    if (wfhList && wfhList.length > 0)
+        h3 Employee Work From Home Details :-
+        table(width='100%', cellspacing='0px', cellpadding='5px', border='1px', bgcolor='#F2F2F2')
+            tr
+                th No.
+                th Name
+                th Subject
+                th Status
+                th Purpose
+                th FromDate
+                th ToDate
+
+            each val, index in wfhList
+                tr(align='center')
+                    td= index+1
+                    td= val.name
+                    td= val.myWfh.Subject
+                    td= val.myWfh.Status
+                    td= val.myWfh.Purpose
+                    td= val.myWfh.FromDate
+                    td= val.myWfh.ToDate
+    else 
+    

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 62.5%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary-slip-demo</title>
+</head>
+<body style="font-family:'Times New Roman', Times, serif; padding: 5rem 2rem; max-width: 80rem; margin : 0 auto; font-weight: 400;font-size: 1.4rem;">
+    <div class="heading" style="text-align : center;margin-bottom: 3rem;background-color: red !important;">
+        <img src="http://localhost:5000/images/bar-logo.png" alt="" style="width: 100%; height : 2px; margin-top: 0;transform: translateY(-7px);">
+        <img src="http://localhost:5000/images/logo-icon.png" style="height: 2.25rem; display: inline-block; padding-top : 10px;">
+        <h1 class="company-name" style="font-size: 3rem; font-weight: 500; margin: 0; padding : 0;width : fit-content; display : inline-block;">            
+            Softrefine Technology Pvt Ltd</h1>
+        <p class="company-address" style="text-transform: uppercase;font-size: 1rem;">601, SUN ORBIT, B/H RAJPATH CLUB ROAD, BODAKDEV, AHMEDABAD, Gujarat India 380054</p>
+    </div>
+    <div class="salary-box">
+        <h2 class="salary-title" style="text-align: center; font-weight: inherit;">Salary Slip for [SALARYMONTH]</h2>
+        <div class="employee-details" style="overflow-x: auto;  margin-top: 2rem;">
+            <table style="width : 100%; min-width : 60rem;">
+                <tr>
+                    <td style="width: 50%; border-right : 2px solid #999"> 
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Employee Name</td>
+                                <td>:</td>
+                                <td style="text-align: right; text-transform: uppercase;letter-spacing: 0.5px;">[NAME]</td>
+                            </tr>
+                            <tr>
+                                <td>Designation</td>
+                                <td>:</td>
+                                <td style="text-align: right; text-transform: uppercase;letter-spacing: 0.5px;">[DESIGNATION]</td>
+                            </tr>
+                            <tr>
+                                <td>Joining Date</td>
+                                <td>:</td>
+                                <td style="text-align: right; text-transform: uppercase;">[JOININGDATE]</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Salary Paid On</td>
+                                <td>:</td>
+                                <td style="text-align: right; text-transform: uppercase;">[SALARYPAIDON]</td>
+                            </tr>
+                            <!-- <tr>
+                                <td>Salary for the month</td>
+                                <td>:</td>
+                                <td style="text-align: right; text-transform: uppercase;">[SALARYMONTH]</td>
+                            </tr> -->
+                        </table>
+                    </td>
+                    <td>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Bank A/c No.</td>
+                                <td>:</td>
+                                <td style="text-align: right; text-transform: uppercase;">[BANKACCOUNTNO]</td>
+                            </tr>
+                            <tr>
+                                <td>Bank Name</td>
+                                <td>:</td>
+                                <td style="text-align: right; text-transform: uppercase;letter-spacing: 0.5px;">[BANKNAME]</td>
+                            </tr>
+                            <tr>
+                                <td>Days worked</td>
+                                <td>:</td>
+                                <td style="text-align: right;">[WORKDAY]</td>
+                            </tr>
+                            <tr>
+                                <td>Absent Days / L.W.P </td>
+                                <td>:</td>
+                                <td style="text-align: right;">[ABSENTDAY]</td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="salary-breakdown" style="overflow-x: auto; margin-top: 2rem;">
+            <!-- 600 width -->
+            <table style="width : 100%; min-width: 60rem; border : 2px solid #999; border-collapse: collapse;">
+                <tr >
+                    <th style="border : 2px solid #999;width: 50%;">Income (INR)</th>
+                    <th style="border : 2px solid #999;">Deductions (INR)</th>
+                </tr>
+                <tr style="border-collapse: collapse;">
+                    <td style="border : 2px solid #999;">
+                        <table style="width : 100%;">
+                            <tr>
+                                <td>Basic Pay</td>
+                                <td style="text-align: right;">[BASICPAY]</td>
+                            </tr>
+                            <tr>
+                                <td>House Rent Allowance</td>
+                                <td style="text-align: right;">[HOUSERENTALLOWANCE]</td>
+                            </tr>
+                            <tr>
+                                <td>Conveyance Allowance</td>
+                                <td style="text-align: right;">[CONVEYANCEALLOWANCE]</td>
+                            </tr>
+                            <tr>
+                                <td>Medical Allowance</td>
+                                <td style="text-align: right;">[MEDICALALLOWANCE]</td>
+                            </tr>
+                            <tr>
+                                <td>Special Allowance</td>
+                                <td style="text-align: right;">[SPECIALALLOWANCE]</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td style="text-align: right;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td style="text-align: right;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="border : 2px solid #999;">
+                        <!-- deductions table no borders -->
+                        <table style=" width : 100%;">
+                            <tr>
+                                <td>Tax Deducted at Source</td>
+                                <td style="text-align: right;">[TAXDEDUCTED]</td>
+                            </tr>
+                            <tr>
+                                <td>Professional Tax</td>
+                                <td style="text-align: right;">[PROFESSIONALTAX]</td>
+                            </tr>
+                            <tr>
+                                <td>Provident Fund</td>
+                                <td style="text-align: right;">[PROVIDENTFUND]</td>
+                            </tr>
+                            <tr>
+                                <td>Advance Adjustment</td>
+                                <td style="text-align: right;">[ADVANCEADJUSTMENT]</td>
+                            </tr>
+                            <tr>
+                                <td>Leave Deduction</td>
+                                <td style="text-align: right;">[LEAVEDEDUCTION]</td>
+                            </tr>
+                            <tr>
+                                <td>ESIC Deductions</td>
+                                <td style="text-align: right;">[ESIC_DEDUCTION]</td>
+                            </tr>
+                            <tr>
+                                <td>Other Deductions</td>
+                                <td style="text-align: right;">[OTHERDEDUCTIONS]</td>
+                            </tr>                            
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border : 2px solid #999;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Gross Salary (A)</td>
+                                <td style="text-align: center;">:</td>
+                                <td style="text-align: right;">[GROSSSALARY]</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="border : 2px solid #999;"> 
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Total Deductions (B)</td>
+                                <td>:</td>
+                                <td style="text-align: right;">[TOTALDEDUCTIONS]</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="salary-breakdown" style="overflow-x: auto; margin-top: 2rem;">
+        <table style="margin : 0 auto; width : 100%; min-width: 60rem; border-collapse: collapse; border : 2px solid #999;">
+            <tr>
+                <td style="width : 30%;">Net Salary (A-B)</td>
+                <td>:</td>
+                <td style="text-align: right;">[NETSALARY]</td>
+            </tr>
+            <tr style="border-bottom: 2px solid #999;">
+                <td>Arrears Paid(C)</td>
+                <td>:</td>
+                <td style="text-align: right;">[ARREARSPAID]</td>
+            </tr>
+            <tr>
+                <td>Total (A-B+C)</td>
+                <td>:</td>
+                <td style="font-size: 1.6rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; text-align: right;">[TOTALSALARY]</td>
+            </tr>
+            
+            <tr>
+                <td style="font-style: italic;">(Rupees in words)</td>
+                <td>:</td>
+                <td style="font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; text-align: right;">Twenty Three Thousand Two Hundred Only</td>
+            </tr>
+        </table>
+        </div>
+        <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;margin : 1rem 0 0.5rem 0; font-style: italic; color : red;font-weight: bold;">This is a computer generated statement and does not
+            require a signature or seal.</p>
+        <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;margin : 0; font-style: italic; color : red; font-weight: bold;">*This document is strictly confidential.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+extends _baseEmail
+
+block content
+    p Dear Sir/Mam,
+    p 
+    p #{name} Deleted The Applied #{actionType} :- 
+    p Subject :- #{Subject} 
+    p From :- #{fromDate} 
+    p To :-  #{toDate}
+    p Purpose :- #{purpose}
+    p Status :- #{status}
+
+    if(reasonToCancel)
+
+        p ReasonToCancel :- #{reasonToCancel}
+    else 
+    
+    p Thank you.

@@ -1,0 +1,25 @@
+extends _baseEmail
+
+block content
+    h3(style={color:"red"}) Employee Working Hours Details
+    body
+    if(attendanceList && attendanceList.length > 0)
+            table(width='100%', cellspacing='0px', cellpadding='5px', border='1px', bgcolor='#F2F2F2')
+                tr
+                    th No.
+                    th Name
+                    th Date
+                    th InTime
+                    th OutTime
+                    th TotalWorkingHours
+
+                each val, index in attendanceList
+                    tr(align='center')
+                        td= index+1
+                        td= val.user.name
+                        td= val.myAttendance.createdAt 
+                        td= val.myAttendance.inTime    
+                        td= val.myAttendance.outTime    
+                        td= val.myAttendance.totalWorkingHours    
+            br
+    else 
